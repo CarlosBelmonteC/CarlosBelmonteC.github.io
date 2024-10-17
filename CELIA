@@ -1,157 +1,193 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos de Celia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-    <title>Galileo Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+        header {
+            background-color: #f7b731;
+            padding: 20px;
+            text-align: center;
+        }
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-[#181411] dark group/design-root overflow-x-hidden"
-      style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#393028] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_535)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
-              </svg>
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #2ecc71;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('gatos.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cats-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .cat-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .cat-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .cat-card h4 {
+            margin-top: 10px;
+        }
+
+        .donate {
+            background-color: #f5f5f5;
+            padding: 50px;
+        }
+
+        .donate p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #f7b731;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gatos de Celia</h1>
+    </header>
+
+    <nav>
+        <a href="#transmision">Transmisión en Vivo</a>
+        <a href="#gatos">Nuestros Gatos</a>
+        <a href="#donaciones">Donaciones</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+    </nav>
+
+    <section class="hero">
+        <h2>¡Adopta, Apadrina o Dona!</h2>
+    </section>
+
+    <!-- Sección de Transmisión en Vivo -->
+    <section id="transmision" class="section">
+        <h3>Transmisión en Vivo</h3>
+        <p>Disfruta viendo a nuestros gatos en su sala de juegos en tiempo real.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección de Nuestros Gatos -->
+    <section id="gatos" class="section">
+        <h3>Nuestros Gatos</h3>
+        <div class="cats-grid">
+            <div class="cat-card">
+                <img src="gato1.jpg" alt="Foto del gato 1">
+                <h4>Gato 1</h4>
+                <p>Edad: 2 años</p>
+                <p>Personalidad: Juguetón y cariñoso.</p>
+                <button>¡Adóptame!</button>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Gatos de Celia</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Adopt</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Donate</a>
+            <div class="cat-card">
+                <img src="gato2.jpg" alt="Foto del gato 2">
+                <h4>Gato 2</h4>
+                <p>Edad: 3 años</p>
+                <p>Personalidad: Tranquilo y observador.</p>
+                <button>¡Adóptame!</button>
             </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#393028] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Contact</span>
-            </button>
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/559d5a52-d216-481a-bf44-a4a16128965d.png");'
-            ></div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/1326e4a1-5699-464b-8164-0f6dd749b5c5.png");'
-                ></div>
-                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
-                  <h1
-                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center"
-                  >
-                    Always live, always cute
-                  </h1>
-                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
-                    <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
-                      <div
-                        class="text-[#baab9c] flex border-none bg-[#393028] items-center justify-center pl-4 rounded-l-xl border-r-0"
-                        data-icon="MagnifyingGlass"
-                        data-size="20px"
-                        data-weight="regular"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                          <path
-                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <input
-                        placeholder="Search for a cat"
-                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#393028] focus:border-none h-full placeholder:text-[#baab9c] px-4 rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                        value=""
-                      />
-                      <div class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-[#393028] pr-2">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f2800d] text-[#181411] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                        >
-                          <span class="truncate">Search</span>
-                        </button>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Cats</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/9aee1bbd-d402-43e0-abab-4f26bc91fcc1.png");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/22ad1c2e-8c77-42d7-92c2-40826c4b1afb.png");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/b1044122-36d9-4234-812d-4f6d81133adf.png");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/25d9132f-5953-42f3-b2d8-ac081a17d0cd.png");'
-                ></div>
-              </div>
-            </div>
-            <div
-              class="relative flex items-center justify-center bg-white bg-cover bg-center aspect-video"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cfbf5953-d72b-424d-b6c7-333e1c3508df.png");'
-            >
-              <button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/40 text-white">
-                <div class="text-inherit" data-icon="Play" data-size="24px" data-weight="fill">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
-            <p class="text-[#baab9c] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">Live Now</p>
-            <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-center pb-2 pt-5">Mittens</h3>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between"><p class="text-white text-base font-medium leading-normal">Help Mittens find a forever home</p></div>
-              <div class="rounded bg-[#54473b]"><div class="h-2 rounded bg-white" style="width: 40%;"></div></div>
-              <p class="text-[#baab9c] text-sm font-normal leading-normal">$600 raised of $1500 goal</p>
-            </div>
-          </div>
+            <!-- Puedes agregar más gatos aquí -->
         </div>
-      </div>
-    </div>
-  </body>
+    </section>
+
+    <!-- Sección de Donaciones -->
+    <section id="donaciones" class="donate">
+        <h3>Donaciones</h3>
+        <p>En "Gatos de Celia" cuidamos a más de 30 gatos en espera de encontrar un hogar. Tus donaciones nos ayudan a cubrir los costos de alimentación, atención médica y mantenimiento de nuestras instalaciones.</p>
+        <p><strong>Costos mensuales:</strong> Alimentación - $300, Cuidado médico - $500, Mantenimiento - $200.</p>
+        <button>Haz una Donación</button>
+    </section>
+
+    <!-- Sección de Sobre Nosotros -->
+    <section id="sobre-nosotros" class="section">
+        <h3>Sobre Nosotros</h3>
+        <p>Fundado por amantes de los gatos en 2015, "Gatos de Celia" es un refugio dedicado a rescatar y cuidar a los gatos que necesitan un hogar. Nuestras instalaciones están equipadas con todo lo necesario para el bienestar de nuestros felinos, desde salas de juegos hasta áreas especiales para gatos con necesidades particulares.</p>
+        <p>Ubicados en las afueras de la ciudad, ofrecemos un espacio seguro y acogedor para nuestros amigos peludos.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: <a href="mailto:info@gatosdecelia.com">info@gatosdecelia.com</a> | Tel: +34 600 123 456</p>
+        <p>Síguenos en nuestras redes sociales: 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
 </html>
